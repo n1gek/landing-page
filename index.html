@@ -17,11 +17,27 @@
             }
             #intro .values {
                 margin-top: 20px;
+            @media (max-width: 600px) {
+                #intro .content {
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                }
+            #intro .content .text {
+                margin-left: 0;
+                margin-right: 20%;
+    
+            }
+            }
             }
             .grid-container {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 gap: 20px;
+            }
+            @media (max-width: 600px) {
+            .grid-container {
+            grid-template-columns: 1fr; }
             }
             .major {
                 text-align: center;
